@@ -1,0 +1,126 @@
+/* CreateTodo.css */
+body {
+    background-color: #f0f0f0; 
+  }
+
+#todo-container {
+    height: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    position: relative;
+}
+
+.heading {
+    text-align: center;
+}
+
+.todo-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    max-width: 150px;
+}
+
+#second {
+    margin-top: 20px;
+    display: flex;
+    
+}
+
+
+
+select {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 5px;
+}
+
+.task-box {
+    border: 1px solid #ddd;
+    
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+  }
+  .box{
+    margin: 50px;
+    background-color: yellowgreen;
+    height: 350px;
+    width: 800px;
+  }
+
+  label {
+    display: flex;
+    margin-bottom: 5px;
+  }
+
+  #status2{
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: orangered;
+  }
+
+
+
+  .action {
+    margin-top: 20px;
+    margin-left: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .todo-form {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    input {
+        margin-bottom: 0;
+    }
+
+    #task_name {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    #task_description {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+    button {
+        margin-left: 0;
+    }
+
+    #status {
+        padding-left: 0;
+    }
+
+    #second {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
